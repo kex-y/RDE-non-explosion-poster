@@ -1,3 +1,4 @@
 *.ttf
 .DS_Store
 *.bbl
+*.synctex.gz
