@@ -1,0 +1,17 @@
+% Suisse Int'l font for EPFL poster 
+% Download from https://inside.epfl.ch/corp-id/en/fonts/ and place the four files in the same directory as this file.
+\RequirePackage{fontspec}
+\newfontfamily{\SuisseIntl}[
+  NFSSFamily=SuisseIntl,
+  Extension = .ttf,
+  Ligatures = TeX,
+  UprightFont = *-Light,
+  BoldFont = *-Medium,
+  ItalicFont = *-LightItalic,
+  BoldItalicFont = *-MediumItalic,
+]{SuisseIntl}
+
+\DeclareOption{default}{%
+  \renewcommand{\familydefault}{SuisseIntl}%
+}
+\ProcessOptions\relax
